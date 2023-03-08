@@ -1,0 +1,132 @@
+body{
+    background-color: rgb(39, 43, 48);
+}
+
+header img{
+    max-height: 30vh;
+    object-fit:cover ;
+}
+.nav-div{
+  margin-top: -5vh;
+}
+nav{
+    box-shadow: 1px 1px 10px rgba(175, 167, 167, 0.685)
+}
+.bg-body-tertiary{
+    background-color:rgb(58, 73, 123) !important
+}
+.nav-img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.navbar-nav li a{
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    color: rgb(13, 134, 185) ;
+}
+
+.nav-link{
+    transition: all 0.5s ease !important;
+}
+
+.nav-link:hover{
+    color: rgb(13, 134, 185) !important ;
+}
+
+.first-span{
+    background-color:rgb(58, 73, 123);
+}
+.game-div1{
+    font-size: 0.8rem !important;
+    font-weight: bold;
+}
+.game-cont{
+    transition: all 0.5s ease;
+    cursor: pointer;
+    /* opacity: 0.7; */
+}
+.game-cont:hover{
+    transform: scale(1.05);
+    /* opacity: 1; */
+}
+#game-info{
+    overflow: scroll;
+}
+.game-info small{
+    background-color: aqua;
+    color: black;
+    padding: 2px 5px ;
+    font-weight: bolder;
+    border-radius: 7px;
+
+}
+.game-btn{
+    transition: all 0.3s ease;
+}
+.game-btn:hover{
+    background-color: yellow !important;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.986);
+}
+.load-spin{
+    background-color: rgb(39, 43, 48,0.8);
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  .game-smallnav small{
+    font-size: 0.7rem;
+    font-weight: bolder;
+  }
+  .game-layer{
+    background-color: rgb(39, 43, 48,0.3);
+    transition: all 0.3s ease;
+  }
+  .game-layer:hover{
+    background-color: transparent;
+  }
+
+  .detail{
+    background-color: rgb(39, 43, 48);
+    z-index: 4;
+  }
+
+  #gameDescSpan{
+    font-size: 1rem;
+  }
+
+  #closeIcon{
+    cursor: pointer;
+  }
